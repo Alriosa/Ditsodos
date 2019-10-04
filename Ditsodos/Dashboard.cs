@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Ditsodos
 {
-    public partial class Login : MetroFramework.Forms.MetroForm
+    public partial class Dashboard : MetroFramework.Forms.MetroForm
     {
-        public Login()
+        public Dashboard()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
         {
 
         }
-
-     
     }
 }
