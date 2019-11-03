@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Castle
-{
+namespace Entities
+
     public class Castle
     {
         private int castleHp { get; set; }
