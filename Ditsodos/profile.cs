@@ -36,7 +36,6 @@ namespace Ditsodos
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
-            this.Close();
         }
     }
 }

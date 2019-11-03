@@ -80,7 +80,7 @@
             // 
             // backDashboardProfileButton
             // 
-            this.backDashboardProfileButton.Location = new System.Drawing.Point(113, 211);
+            this.backDashboardProfileButton.Location = new System.Drawing.Point(112, 211);
             this.backDashboardProfileButton.Name = "backDashboardProfileButton";
             this.backDashboardProfileButton.Size = new System.Drawing.Size(75, 23);
             this.backDashboardProfileButton.TabIndex = 4;

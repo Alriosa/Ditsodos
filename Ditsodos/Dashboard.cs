@@ -31,7 +31,8 @@ namespace Ditsodos
 
         private void SeeVictoryButton_Click(object sender, EventArgs e)
         {
-
+            Profile profile = new Profile();
+            profile.Show();
         }
 
         private void NewGameButton_Click(object sender, EventArgs e)
