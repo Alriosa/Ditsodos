@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +23,25 @@ namespace Ditsodos
 
         }
 
-        private void MetroLink1_Click(object sender, EventArgs e)
-        {
+     
 
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void ExitGame_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
+        }
+
+        private void CreateAccountLink_Click(object sender, EventArgs e)
+        {
+            CreateAccount createAccount = new CreateAccount();
+            createAccount.Show();
+            this.Hide();
         }
     }
 }

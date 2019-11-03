@@ -45,6 +45,7 @@
             this.createAccountButton.Size = new System.Drawing.Size(75, 23);
             this.createAccountButton.TabIndex = 0;
             this.createAccountButton.Text = "Accept";
+            this.createAccountButton.Click += new System.EventHandler(this.CreateAccountButton_Click);
             // 
             // cancelAccountButton
             // 
@@ -53,6 +54,7 @@
             this.cancelAccountButton.Size = new System.Drawing.Size(75, 23);
             this.cancelAccountButton.TabIndex = 1;
             this.cancelAccountButton.Text = "Cancel";
+            this.cancelAccountButton.Click += new System.EventHandler(this.CancelAccountButton_Click);
             // 
             // createUsernameTextbox
             // 

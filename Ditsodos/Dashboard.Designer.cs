@@ -40,6 +40,7 @@
             this.newGameButton.Size = new System.Drawing.Size(239, 97);
             this.newGameButton.TabIndex = 0;
             this.newGameButton.Text = "Play!";
+            this.newGameButton.Click += new System.EventHandler(this.NewGameButton_Click);
             // 
             // seeVictoryButton
             // 
@@ -48,6 +49,7 @@
             this.seeVictoryButton.Size = new System.Drawing.Size(239, 97);
             this.seeVictoryButton.TabIndex = 1;
             this.seeVictoryButton.Text = "See your Victories";
+            this.seeVictoryButton.Click += new System.EventHandler(this.SeeVictoryButton_Click);
             // 
             // dashboardExitButton
             // 
@@ -56,6 +58,7 @@
             this.dashboardExitButton.Size = new System.Drawing.Size(239, 97);
             this.dashboardExitButton.TabIndex = 2;
             this.dashboardExitButton.Text = "Exit";
+            this.dashboardExitButton.Click += new System.EventHandler(this.DashboardExitButton_Click);
             // 
             // Dashboard
             // 

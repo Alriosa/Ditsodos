@@ -26,5 +26,19 @@ namespace Ditsodos
         {
 
         }
+
+        private void CreateAccountButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void CancelAccountButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }
