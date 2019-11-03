@@ -24,9 +24,19 @@ namespace Ditsodos
 
         private void DashboardExitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Login login = new Login();
-            login.Show();
+            DialogResult dialogResult = MessageBox.Show("Do you really want to logout?", "Message Box", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                Login login = new Login();
+                login.Show();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+
+            
         }
 
         private void SeeVictoryButton_Click(object sender, EventArgs e)

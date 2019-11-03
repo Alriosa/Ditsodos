@@ -34,7 +34,17 @@ namespace Ditsodos
 
         private void ExitGame_Click(object sender, EventArgs e)
         {
-           Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("Do you really want to exit?", "Message Box", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+
+            
         }
 
         private void CreateAccountLink_Click(object sender, EventArgs e)

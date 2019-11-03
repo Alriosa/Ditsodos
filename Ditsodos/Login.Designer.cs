@@ -87,7 +87,7 @@
             this.createAccountLink.Name = "createAccountLink";
             this.createAccountLink.Size = new System.Drawing.Size(116, 23);
             this.createAccountLink.TabIndex = 4;
-            this.createAccountLink.Text = "Crear cuenta";
+            this.createAccountLink.Text = "Create Account";
             this.createAccountLink.Click += new System.EventHandler(this.CreateAccountLink_Click);
             // 
             // exitGame

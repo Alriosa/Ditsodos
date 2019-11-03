@@ -63,7 +63,6 @@
             this.createUsernameTextbox.PasswordChar = '●';
             this.createUsernameTextbox.Size = new System.Drawing.Size(157, 23);
             this.createUsernameTextbox.TabIndex = 2;
-            this.createUsernameTextbox.UseSystemPasswordChar = true;
             this.createUsernameTextbox.Click += new System.EventHandler(this.MetroTextBox1_Click);
             // 
             // createPasswordTextbox
