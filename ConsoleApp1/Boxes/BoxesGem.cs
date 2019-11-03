@@ -6,5 +6,6 @@ namespace Entities
 {
     public class BoxesGem : Boxes
     {
+        private Gem gemGenerade { get; set; }
     }
 }

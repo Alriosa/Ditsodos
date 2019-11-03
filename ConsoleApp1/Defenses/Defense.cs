@@ -10,5 +10,7 @@ namespace Entities
         private int defAttack;
         private int defRange;
         private int defPrice;
+        private Castle castl { get; set; }
+
     }
 }

@@ -16,10 +16,16 @@ namespace Entities
             return true;
         }
 
-        public int steal(int gold)
+        public int stealGold(int gold)
         {
             //falta implementacion
             return 0;
         }
+
+        public void GiveGoldCastle ()
+        {
+
+        }
+
     }
 }
