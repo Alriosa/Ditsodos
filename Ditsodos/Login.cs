@@ -22,6 +22,9 @@ namespace Ditsodos
 
         }
 
-     
+        private void MetroLink1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.usernameTxtBox = new MetroFramework.Controls.MetroTextBox();
-            this.passwordTxtBox = new MetroFramework.Controls.MetroTextBox();
+            this.passwordLoginTxtBox = new MetroFramework.Controls.MetroTextBox();
             this.usernameLabel = new MetroFramework.Controls.MetroLabel();
             this.passwordLabel = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.loginButton = new MetroFramework.Controls.MetroButton();
             this.metroLink1 = new MetroFramework.Controls.MetroLink();
             this.SuspendLayout();
             // 
@@ -43,13 +43,13 @@
             this.usernameTxtBox.Size = new System.Drawing.Size(116, 23);
             this.usernameTxtBox.TabIndex = 0;
             // 
-            // passwordTxtBox
+            // passwordLoginTxtBox
             // 
-            this.passwordTxtBox.Location = new System.Drawing.Point(64, 239);
-            this.passwordTxtBox.Name = "passwordTxtBox";
-            this.passwordTxtBox.PasswordChar = '*';
-            this.passwordTxtBox.Size = new System.Drawing.Size(116, 23);
-            this.passwordTxtBox.TabIndex = 0;
+            this.passwordLoginTxtBox.Location = new System.Drawing.Point(64, 239);
+            this.passwordLoginTxtBox.Name = "passwordLoginTxtBox";
+            this.passwordLoginTxtBox.PasswordChar = '*';
+            this.passwordLoginTxtBox.Size = new System.Drawing.Size(116, 23);
+            this.passwordLoginTxtBox.TabIndex = 0;
             // 
             // usernameLabel
             // 
@@ -69,13 +69,13 @@
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
-            // metroButton1
+            // loginButton
             // 
-            this.metroButton1.Location = new System.Drawing.Point(64, 293);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 3;
-            this.metroButton1.Text = "Log In";
+            this.loginButton.Location = new System.Drawing.Point(64, 293);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 3;
+            this.loginButton.Text = "Log In";
             // 
             // metroLink1
             // 
@@ -86,6 +86,7 @@
             this.metroLink1.Size = new System.Drawing.Size(116, 23);
             this.metroLink1.TabIndex = 4;
             this.metroLink1.Text = "Crear cuenta";
+            this.metroLink1.Click += new System.EventHandler(this.MetroLink1_Click);
             // 
             // Login
             // 
@@ -93,10 +94,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(242, 450);
             this.Controls.Add(this.metroLink1);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
-            this.Controls.Add(this.passwordTxtBox);
+            this.Controls.Add(this.passwordLoginTxtBox);
             this.Controls.Add(this.usernameTxtBox);
             this.Name = "Login";
             this.Text = "Login";
@@ -109,10 +110,10 @@
         #endregion
 
         private MetroFramework.Controls.MetroTextBox usernameTxtBox;
-        private MetroFramework.Controls.MetroTextBox passwordTxtBox;
+        private MetroFramework.Controls.MetroTextBox passwordLoginTxtBox;
         private MetroFramework.Controls.MetroLabel usernameLabel;
         private MetroFramework.Controls.MetroLabel passwordLabel;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton loginButton;
         private MetroFramework.Controls.MetroLink metroLink1;
     }
 }
