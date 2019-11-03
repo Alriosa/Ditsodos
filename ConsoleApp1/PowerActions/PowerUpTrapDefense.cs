@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities
+namespace Entities.PowerActions
 {
-    public class User
+    public class PowerUpTrapDefense : PowerUpAction
     {
 
-
-
     }
+}

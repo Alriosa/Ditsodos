@@ -4,9 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    public class User
+    public class BoxesRegular : Boxes
     {
-
-
-
     }
+}

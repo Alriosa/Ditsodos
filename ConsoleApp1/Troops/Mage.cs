@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    class Mage
+    public class Mage : Troops
     {
     }
 }

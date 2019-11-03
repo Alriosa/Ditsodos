@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    class Assasin
+    public class Assasin : Troops
     {
     }
 }
