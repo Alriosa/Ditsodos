@@ -65,9 +65,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 220);
+            this.ControlBox = false;
             this.Controls.Add(this.dashboardExitButton);
             this.Controls.Add(this.seeVictoryButton);
             this.Controls.Add(this.newGameButton);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);

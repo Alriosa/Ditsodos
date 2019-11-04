@@ -26,5 +26,17 @@ namespace Ditsodos
         {
 
         }
+
+        private void MetroTile1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitGameButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+        }
     }
 }

@@ -104,6 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(242, 310);
+            this.ControlBox = false;
             this.Controls.Add(this.exitGame);
             this.Controls.Add(this.createAccountLink);
             this.Controls.Add(this.loginButton);
@@ -111,6 +112,8 @@
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.passwordLoginTxtBox);
             this.Controls.Add(this.usernameTxtBox);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);

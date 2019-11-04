@@ -115,6 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 214);
+            this.ControlBox = false;
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -123,6 +124,8 @@
             this.Controls.Add(this.createUsernameTextbox);
             this.Controls.Add(this.cancelAccountButton);
             this.Controls.Add(this.createAccountButton);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreateAccount";
             this.Text = "Create Account";
             this.Load += new System.EventHandler(this.CreateAccount_Load);
