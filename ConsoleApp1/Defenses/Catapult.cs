@@ -6,5 +6,9 @@ namespace Entities
 {
     public class Catapult : Defense
     {
+        public void attack()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -4,15 +4,51 @@ using System.Text;
 
 namespace Entities
 {
-    public class Troops
+    public abstract class Troop
     {
-        private int troopPrice { get; set; }
-        private int troopHp { get; set; }
-        private int troopMovement { get; set; }
-        private int troopDefense { get; set; }
-        private int troopAttack { get; set; }
-        private int troopRange { get; set; }
-        private int goldCarrying { get; set; }
+        protected int troopPrice { get; set; }
+        protected int troopHp { get; set; }
+        protected int troopDefense { get; set; }
+        protected int troopMovement { get; set; }
+        protected int troopAttack { get; set; }
+        protected int troopRange { get; set; }
+        protected int goldCarrying { get; set; }
+
+
+
+        public Troop()
+        {
+            troopPrice = 0;
+            troopHp = 0;
+            troopDefense = 0;
+            troopMovement = 0;
+            troopAttack = 0;
+            troopRange = 0;
+            goldCarrying = 0;
+        }
+
+        protected Troop(int troopPrice, int troopHp, int troopDefense, int troopMovement, int troopAttack, int troopRange, int goldCarrying)
+        {
+            this.troopPrice = troopPrice;
+            this.troopHp = troopHp;
+            this.troopDefense = troopDefense;
+            this.troopMovement = troopMovement;
+            this.troopAttack = troopAttack;
+            this.troopRange = troopRange;
+            this.goldCarrying = goldCarrying;
+        }
+
+        public abstract string getDescription();
+
+        public abstract int getAttack();
+        public abstract int getDefense();
+        public abstract int getRange();
+        public abstract int getMovements();
+        public abstract int getPrice();
+        public abstract int getGoldCarrying();
+        public abstract int attack();
+        public abstract int giveGoldToCastle();
+
     }
 
 }

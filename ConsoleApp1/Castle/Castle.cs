@@ -2,29 +2,26 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities
-
+namespace Entities.Castle
+{
     public class Castle
     {
-        private int castleHp { get; set; }
-        private bool castleStatus { get; set; }
-        private int castleGold { get; set; }
-        private int castleTroops { get; set; }
-        private bool max_crossbow { get; set; }
-        private bool max_catapult { get; set; }
-        private List<Troops> troopsReserved { get; set; }
+        private int hp { get; set; }
+        private bool status { get; set; }
+        private int gold { get; set; }
+        private int troops { get; set; }
+        private int max_croosbow { get; set; }
+        private int max_catapult { get; set; }
+        // Start is called before the first frame update
 
-        public void createTroops()
+
+        void createTroops()
         {
 
         }
 
-        public void createDefenses()
-        {
 
-        }
-
-        public void cancelTroops()
+        void createDefenses()
         {
 
         }

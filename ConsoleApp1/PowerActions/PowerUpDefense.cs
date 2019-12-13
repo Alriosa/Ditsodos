@@ -1,12 +1,14 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Entities
-{ 
-    public class PowerUpDefense : PowerUpAction
+public class PowerUpDefense : PowerUpAction
+{
+
+    private int cantActive { get; set; }
+    public bool actived()
     {
-        private int cantActive { get; set; }
+        throw new System.NotImplementedException();
     }
 
+   
 }

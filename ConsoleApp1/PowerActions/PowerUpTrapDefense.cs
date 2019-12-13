@@ -1,11 +1,10 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Entities
+public class PowerUpTrapDefense : PowerUpAction
 {
-    public class PowerUpTrapDefense : PowerUpAction
+    public bool actived()
     {
-
-    }
+        throw new System.NotImplementedException();
+    }    
 }
