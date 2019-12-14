@@ -28,13 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.newGameButton = new MetroFramework.Controls.MetroButton();
+            this.seeVictoryButton = new MetroFramework.Controls.MetroButton();
+            this.dashboardExitButton = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
+            // 
+            // newGameButton
+            // 
+            this.newGameButton.Location = new System.Drawing.Point(23, 75);
+            this.newGameButton.Name = "newGameButton";
+            this.newGameButton.Size = new System.Drawing.Size(239, 97);
+            this.newGameButton.TabIndex = 0;
+            this.newGameButton.Text = "Play!";
+            this.newGameButton.Click += new System.EventHandler(this.NewGameButton_Click);
+            // 
+            // seeVictoryButton
+            // 
+            this.seeVictoryButton.Location = new System.Drawing.Point(268, 75);
+            this.seeVictoryButton.Name = "seeVictoryButton";
+            this.seeVictoryButton.Size = new System.Drawing.Size(239, 97);
+            this.seeVictoryButton.TabIndex = 1;
+            this.seeVictoryButton.Text = "See your Victories";
+            this.seeVictoryButton.Click += new System.EventHandler(this.SeeVictoryButton_Click);
+            // 
+            // dashboardExitButton
+            // 
+            this.dashboardExitButton.Location = new System.Drawing.Point(513, 75);
+            this.dashboardExitButton.Name = "dashboardExitButton";
+            this.dashboardExitButton.Size = new System.Drawing.Size(239, 97);
+            this.dashboardExitButton.TabIndex = 2;
+            this.dashboardExitButton.Text = "Exit";
+            this.dashboardExitButton.Click += new System.EventHandler(this.DashboardExitButton_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 220);
+            this.ControlBox = false;
+            this.Controls.Add(this.dashboardExitButton);
+            this.Controls.Add(this.seeVictoryButton);
+            this.Controls.Add(this.newGameButton);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
@@ -43,5 +79,9 @@
         }
 
         #endregion
+
+        private MetroFramework.Controls.MetroButton newGameButton;
+        private MetroFramework.Controls.MetroButton seeVictoryButton;
+        private MetroFramework.Controls.MetroButton dashboardExitButton;
     }
 }
