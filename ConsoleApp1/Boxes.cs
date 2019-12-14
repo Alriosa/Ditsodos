@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Entities
 {
-    class Boxes
+    public class Boxes
     {
+        private string type { get; set; }
+        private int quantity { get; set; }
+        private int location { get; set; }
     }
 }

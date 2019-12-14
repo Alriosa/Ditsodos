@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Entities
 {
-    class Tablet
+    public class Tablet
     {
+        private int maxTroops { get; set; };
+        private int boxes { get; set; }
     }
 }

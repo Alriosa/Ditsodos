@@ -4,19 +4,32 @@ using System.Text;
 
 namespace Entities
 {
-    public class Archer : Troop
+    public class Berseker : Troop
     {
-
-        public Archer ()
+        public Berseker()
         {
-            troopPrice = 10;
-            troopHp = 10;
-            troopMovement = 3;
-            troopDefense = 3;
-            troopAttack = 3;
-            troopRange = 4;
-            goldCarrying = 2;
+            troopPrice = 25;
+            troopHp = 15;
+            troopMovement = 1;
+            troopDefense = 10;
+            troopAttack = 10;
+            troopRange = 2;
+            goldCarrying = 6;
         }
+
+        public override string getDescription()
+        {
+            string mensaje = "Personaje: Berseker\nPrecio: " + Convert.ToString(troopPrice);
+            mensaje += "\nVida: " + Convert.ToString(troopHp);
+            mensaje += "\nCant Mov: " + Convert.ToString(troopMovement);
+            mensaje += "\nDefensa: " + Convert.ToString(troopDefense);
+            mensaje += "\nPuntos de ataque: " + Convert.ToString(troopAttack);
+            mensaje += "\nRango de ataque: " + Convert.ToString(troopRange);
+            mensaje += "\nCant oro transportable: " + Convert.ToString(goldCarrying);
+            return mensaje;
+
+        }
+
         public override int attack()
         {
             throw new NotImplementedException();
@@ -30,19 +43,6 @@ namespace Entities
         public override int getDefense()
         {
             throw new NotImplementedException();
-        }
-
-        public override string getDescription()
-        {
-            string mensaje = "Personaje: Archer\n Precio: " + Convert.ToString(troopPrice);
-            mensaje += "\nVida: " + Convert.ToString(troopHp);
-            mensaje += "\nCant Mov: " + Convert.ToString(troopMovement);
-            mensaje += "\nDefensa: " + Convert.ToString(troopDefense);    
-            mensaje += "\nPuntos de ataque: " + Convert.ToString(troopAttack);    
-            mensaje += "\nRango de ataque: " + Convert.ToString(troopRange);    
-            mensaje += "\nCant oro transportable: " + Convert.ToString(goldCarrying);    
-            return mensaje;
-
         }
 
         public override int getGoldCarrying()

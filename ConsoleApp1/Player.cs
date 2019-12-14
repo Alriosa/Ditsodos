@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Entities
 {
-    class Player
+    public class Player
     {
+        private int max_trops { get; set; }
+        private bool isYourTurn { get; set; }
     }
 }
