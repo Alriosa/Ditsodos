@@ -29,32 +29,33 @@
         private void InitializeComponent()
         {
             this.usernameTxtBox = new MetroFramework.Controls.MetroTextBox();
-            this.passwordTxtBox = new MetroFramework.Controls.MetroTextBox();
+            this.passwordLoginTxtBox = new MetroFramework.Controls.MetroTextBox();
             this.usernameLabel = new MetroFramework.Controls.MetroLabel();
             this.passwordLabel = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.loginButton = new MetroFramework.Controls.MetroButton();
+            this.createAccountLink = new MetroFramework.Controls.MetroLink();
+            this.exitGame = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // usernameTxtBox
             // 
-            this.usernameTxtBox.Location = new System.Drawing.Point(64, 166);
+            this.usernameTxtBox.Location = new System.Drawing.Point(64, 101);
             this.usernameTxtBox.Name = "usernameTxtBox";
             this.usernameTxtBox.Size = new System.Drawing.Size(116, 23);
             this.usernameTxtBox.TabIndex = 0;
             // 
-            // passwordTxtBox
+            // passwordLoginTxtBox
             // 
-            this.passwordTxtBox.Location = new System.Drawing.Point(64, 239);
-            this.passwordTxtBox.Name = "passwordTxtBox";
-            this.passwordTxtBox.PasswordChar = '*';
-            this.passwordTxtBox.Size = new System.Drawing.Size(116, 23);
-            this.passwordTxtBox.TabIndex = 0;
+            this.passwordLoginTxtBox.Location = new System.Drawing.Point(64, 166);
+            this.passwordLoginTxtBox.Name = "passwordLoginTxtBox";
+            this.passwordLoginTxtBox.PasswordChar = '*';
+            this.passwordLoginTxtBox.Size = new System.Drawing.Size(116, 23);
+            this.passwordLoginTxtBox.TabIndex = 0;
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(64, 141);
+            this.usernameLabel.Location = new System.Drawing.Point(64, 76);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(68, 19);
             this.usernameLabel.TabIndex = 1;
@@ -63,41 +64,56 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(64, 214);
+            this.passwordLabel.Location = new System.Drawing.Point(64, 141);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(63, 19);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
-            // metroButton1
+            // loginButton
             // 
-            this.metroButton1.Location = new System.Drawing.Point(64, 293);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 3;
-            this.metroButton1.Text = "Log In";
+            this.loginButton.Location = new System.Drawing.Point(83, 203);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 3;
+            this.loginButton.Text = "Log In";
+            this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
-            // metroLink1
+            // createAccountLink
             // 
-            this.metroLink1.BackColor = System.Drawing.Color.Aqua;
-            this.metroLink1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.metroLink1.Location = new System.Drawing.Point(64, 322);
-            this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(116, 23);
-            this.metroLink1.TabIndex = 4;
-            this.metroLink1.Text = "Crear cuenta";
+            this.createAccountLink.BackColor = System.Drawing.Color.Aqua;
+            this.createAccountLink.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.createAccountLink.Location = new System.Drawing.Point(64, 285);
+            this.createAccountLink.Name = "createAccountLink";
+            this.createAccountLink.Size = new System.Drawing.Size(116, 23);
+            this.createAccountLink.TabIndex = 4;
+            this.createAccountLink.Text = "Create Account";
+            this.createAccountLink.Click += new System.EventHandler(this.CreateAccountLink_Click);
+            // 
+            // exitGame
+            // 
+            this.exitGame.Location = new System.Drawing.Point(83, 232);
+            this.exitGame.Name = "exitGame";
+            this.exitGame.Size = new System.Drawing.Size(75, 23);
+            this.exitGame.TabIndex = 5;
+            this.exitGame.Text = "Exit Game";
+            this.exitGame.Click += new System.EventHandler(this.ExitGame_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 450);
-            this.Controls.Add(this.metroLink1);
-            this.Controls.Add(this.metroButton1);
+            this.ClientSize = new System.Drawing.Size(242, 310);
+            this.ControlBox = false;
+            this.Controls.Add(this.exitGame);
+            this.Controls.Add(this.createAccountLink);
+            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
-            this.Controls.Add(this.passwordTxtBox);
+            this.Controls.Add(this.passwordLoginTxtBox);
             this.Controls.Add(this.usernameTxtBox);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -109,11 +125,12 @@
         #endregion
 
         private MetroFramework.Controls.MetroTextBox usernameTxtBox;
-        private MetroFramework.Controls.MetroTextBox passwordTxtBox;
+        private MetroFramework.Controls.MetroTextBox passwordLoginTxtBox;
         private MetroFramework.Controls.MetroLabel usernameLabel;
         private MetroFramework.Controls.MetroLabel passwordLabel;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroLink metroLink1;
+        private MetroFramework.Controls.MetroButton loginButton;
+        private MetroFramework.Controls.MetroLink createAccountLink;
+        private MetroFramework.Controls.MetroButton exitGame;
     }
 }
 
