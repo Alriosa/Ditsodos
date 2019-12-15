@@ -38,5 +38,15 @@ namespace Ditsodos
             dashboard.Show();
             this.Close();
         }
+
+        private void MetroLabel2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MetroUserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -111,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -128,6 +129,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\playercastle1.png" />
+    <None Include="Resources\spy.png" />
+    <None Include="Resources\rider.png" />
+    <None Include="Resources\playercastle.png" />
+    <None Include="Resources\Mage.png" />
+    <None Include="Resources\knight.png" />
+    <None Include="Resources\Berserker.png" />
+    <None Include="Resources\Asassin.png" />
+    <None Include="Resources\Archer.png" />
+    <None Include="Resources\castle.png" />
+    <None Include="Resources\Webp.net-resizeimage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
